@@ -13,6 +13,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.zhaobo.progressviews.R;
+import com.zhaobo.progressviews.widget.Custom3DView;
 import com.zhaobo.progressviews.widget.PullDrawable;
 import com.zhaobo.progressviews.widget.RefreshListView;
 import com.zhaobo.progressviews.widget.Rotate3dAnimation;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add("Camera实现3D");
         datas.add("自定义ViewGroup");
         datas.add("测试权限");
+        datas.add("Camera 3D实现");
         adapter=new MainAdapter(datas,this);
         recyclerView.setAdapter(adapter);
         adapter.setOnRecycleViewItemClickListener(new MainAdapter.OnRecycleViewItemClickListener() {
@@ -81,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 9:
                         startActivity(new Intent(MainActivity.this,PermisionActivity.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(MainActivity.this,Custom3DActivity.class));
                         break;
                 }
             }

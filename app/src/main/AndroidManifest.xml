@@ -27,7 +27,8 @@
         <activity android:name=".ui.RemoteControlActivity" />
         <activity android:name=".ui.Rotate3DAnimationActivity" />
         <activity android:name=".ui.CustomViewgroupActivity" />
-        <activity android:name=".ui.PermisionActivity"></activity>
+        <activity android:name=".ui.PermisionActivity"/>
+        <activity android:name=".ui.Custom3DActivity"/>
     </application>
 
 </manifest>

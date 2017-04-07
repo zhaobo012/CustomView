@@ -23,6 +23,7 @@ import butterknife.ButterKnife;
 public abstract class BaseActivity extends AppCompatActivity {
 
     @SuppressWarnings("unchecked")
+    //modify
     public <T extends View> T findView(int id) {
         return (T) findViewById(id);
     }
